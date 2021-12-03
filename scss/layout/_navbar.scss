@@ -1,0 +1,23 @@
+.navbar {
+    @include padding(0.5em, 0); 
+    height: 40px;
+    width: 100%;
+    background: _palette(navb);
+    ul{
+        list-style: none;
+        span {
+            color: #fff;
+            font-size: _size(20px);
+            padding-right: 2em;
+            font-weight: bold;
+        }
+        a{
+            padding-right: 10px;
+        }
+        a:active {
+            color: #5AA6ED;	
+            text-decoration: underline !important;
+        }
+        
+    }
+}
