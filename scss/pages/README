@@ -1,1 +1,15 @@
-Add your individual page files here
+# Storydata
+
+## How to run 
+
+'''
+npm i
+
+npm run storybook
+'''
+
+## How to build
+
+'''
+npm run build-storybook
+'''
