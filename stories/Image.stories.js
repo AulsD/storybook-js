@@ -1,13 +1,9 @@
-import { createButton } from './Button';
+import { createImage } from './Image';
 
-// More on default export: https://storybook.js.org/docs/html/writing-stories/introduction#default-export
 export default {
-  title: 'Example Img tag',
-  // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
+  title: 'Example/Image',
   argTypes: {
-    backgroundColor: { control: 'color' },
     label: { control: 'text' },
-    onClick: { action: 'onClick' },
     primary: { control: 'boolean' },
     size: {
       control: { type: 'select' },
@@ -20,29 +16,29 @@ export default {
 const Template = ({ label, ...args }) => {
   // You can either use a function to create DOM elements or use a plain html string!
   // return `<div>${label}</div>`;
-  return createButton({ label, ...args });
+  return createImage({ label, ...args });
 };
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/html/writing-stories/args
 Primary.args = {
   primary: true,
-  label: 'Button',
+  label: 'Image',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  label: 'Button',
+  label: 'Image',
 };
 
 export const Large = Template.bind({});
 Large.args = {
   size: 'large',
-  label: 'Button',
+  label: 'Image',
 };
 
 export const Small = Template.bind({});
 Small.args = {
   size: 'small',
-  label: 'Button',
+  label: 'Image',
 };
