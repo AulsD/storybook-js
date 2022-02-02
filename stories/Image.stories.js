@@ -19,25 +19,14 @@ const Template = ({ label, ...args }) => {
   return createImage({ label, ...args });
 };
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/html/writing-stories/args
-Primary.args = {
-  primary: true,
-  label: 'Image',
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Image',
-};
-
 export const Large = Template.bind({});
+// More on args: https://storybook.js.org/docs/html/writing-stories/args
 Large.args = {
-  size: 'large',
+  large: true,
   label: 'Image',
 };
 
-export const Small = Template.bind({});
+export const small = Template.bind({});
 Small.args = {
   size: 'small',
   label: 'Image',

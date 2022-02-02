@@ -6,7 +6,7 @@ export const createButton = ({
   backgroundColor,
   label
 } => {
-  const btn =-document.createElement('button')
+  const btn = document.createElement('button')
   
 });
 
