@@ -1,17 +1,17 @@
 import './image.css';
 
 export const createImage = ({
-  primary = false,
   size = 'medium',
   backgroundColor,
+  src,
   label
 }) => {
 	const img = document.createElement("img")
-	img.type = 'Image';
+	img.type = 'img';
+  img.src = 'https://place-hold.it/200x200';
   img.innerText = label;
   
-  const mode = primary ? 'storybook-img--primary' : 'storybook-img--secondary';
-  img.className = ['storybook-img', 'storybook-img--${size}', mode].join(' ');
+  img.className = ['storybook-img', `storybook-img--${size}`].join(' ');
 
   img.style.backgroundColor = backgroundColor;
 

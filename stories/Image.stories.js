@@ -4,10 +4,8 @@ export default {
   title: 'Example/Image',
   argTypes: {
     label: { control: 'text' },
-    primary: { control: 'boolean' },
     size: {
-      control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
+      options: ['medium', 'large'],
     },
   },
 };
@@ -26,8 +24,8 @@ Large.args = {
   label: 'Image',
 };
 
-export const small = Template.bind({});
-Small.args = {
-  size: 'small',
+export const medium = Template.bind({});
+medium.args = {
+  medium: true,
   label: 'Image',
 };

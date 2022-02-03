@@ -16,7 +16,8 @@
     "@storybook/addon-essentials": "^6.4.0",
     "@storybook/addon-links": "^6.4.0",
     "@storybook/html": "^6.4.0",
-    "babel-loader": "^8.2.3"
+    "babel-loader": "^8.2.3",
+    "node-sass": "^7.0.1"
   },
   "dependencies": {}
 }

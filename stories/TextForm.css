@@ -1,0 +1,12 @@
+input {
+  width: 100px;
+  height: 100px;
+}
+
+input[text] {
+  outline: none;
+}
+
+.input-type {
+  background-color: blue;;
+}
