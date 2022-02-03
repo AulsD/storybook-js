@@ -4,10 +4,8 @@ export default {
   title: 'Example/Image',
   argTypes: {
     label: { control: 'text' },
-    primary: { control: 'boolean' },
     size: {
-      control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
+      options: ['medium', 'large'],
     },
   },
 };
@@ -19,26 +17,15 @@ const Template = ({ label, ...args }) => {
   return createImage({ label, ...args });
 };
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/html/writing-stories/args
-Primary.args = {
-  primary: true,
-  label: 'Image',
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Image',
-};
-
 export const Large = Template.bind({});
+// More on args: https://storybook.js.org/docs/html/writing-stories/args
 Large.args = {
-  size: 'large',
+  large: true,
   label: 'Image',
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
+export const medium = Template.bind({});
+medium.args = {
+  medium: true,
   label: 'Image',
 };
