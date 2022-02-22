@@ -8,10 +8,11 @@ export const createImage = ({
 }) => {
 	const img = document.createElement("img")
 	img.type = 'img';
-  img.src = 'https://place-hold.it/200x200';
+  img.src = `https://place-hold.it/${number}`;
   img.innerText = label;
   
-  img.className = ['storybook-img', `storybook-img--${size}`].join(' ');
+  
+  img.className = ['storybook-img', `storybook-img--${size}`, mode].join(' ');
 
   img.style.backgroundColor = backgroundColor;
 
